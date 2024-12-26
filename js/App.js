@@ -1,14 +1,17 @@
 class Quiz {
     constructor(title, questionNumber) {
-        if (title === 'partie-1' && questionNumber === 4) {
-            this._title = title
-            this._questionNumber = questionNumber
+        if (title === "partie-1" && questionNumber === 4) {
+            this._title = title;
+            this._questionNumber = questionNumber;
         } else {
-            throw 'Les paramètres données ne sont pas les bons !'
+            throw "Les paramètres données ne sont pas les bons !";
         }
     }
 
     getAnswer() {
-        return "C'était pas si difficile :)"
+        return "C'était pas si difficile :)";
     }
 }
+
+const quiz = new Quiz("partie-1", 4);
+console.log(quiz.getAnswer());
